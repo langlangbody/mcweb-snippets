@@ -3,7 +3,7 @@
 	"displayName": "mcweb-snippets",
 	"description": "代码提示工具",
 	"version": "0.0.1",
-	"publisher": "xll",
+	"publisher": "xielanglang",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/langlangbody/mcweb-snippets"
