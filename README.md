@@ -3,12 +3,7 @@
 ### Install
 
 #### Manual Install
-Go to the [git](https://github.com/snowffer/Element-UI-Snippets-VSCode) and download the snippets folder, then copy the files in the folder to the path directly:
-
-+ **Mac**: /Users/*< your-user-name >*/Library/Application Support/Code/User/snippets/
-+ **Windows**: *< your-installed-driver >* :\Users\ *< your-user-name >* \AppData\Roaming\Code\User\snippets\
-
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020060809502338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Jlc19taW4=,size_16,color_FFFFFF,t_70#pic_center)
 
 
 #### Basic Part
