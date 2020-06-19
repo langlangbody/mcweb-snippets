@@ -2,7 +2,7 @@
 	"name": "mcweb-snippets",
 	"displayName": "mcweb-snippets",
 	"description": "代码提示工具",
-	"version": "0.0.1",
+	"version": "0.1.3",
 	"publisher": "xielanglang",
 	"repository": {
 		"type": "git",
@@ -26,19 +26,19 @@
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./snippets/mussel-ui.json"
+				"path": "./snippets/mussel.json"
 			},
 			{
 				"language": "html",
-				"path": "./snippets/mussel-ui.json"
+				"path": "./snippets/mussel.json"
 			},
 			{
 				"language": "vue",
-				"path": "./snippets/mussel-ui.json"
+				"path": "./snippets/mussel.json"
 			},
 			{
 				"language": "vue-html",
-				"path": "./snippets/mussel-ui.json"
+				"path": "./snippets/mussel.json"
 			}
 		]
 	},

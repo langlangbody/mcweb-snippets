@@ -3,167 +3,140 @@
 		"prefix": "muflitem",
 		"body": [
 			"<mu-flex-item size=\"$1\">",
-				"\t${2:<!-- container -->}",
-			"</mu-flex-item>",
-			"${2}"
+			"\t${2:<!-- container -->}",
+			"</mu-flex-item>"
 		],
 		"description": "MusselFlexItem Items of flex container."
 	},
-
 	"Basic: Layout mu-flex-box": {
 		"prefix": "muflbox",
 		"body": [
 			"<mu-flex-box align-items=\"${1|flex, align-items|}\">",
-				"\t${2:<!-- flex container -->}",
-			"</mu-flex-box>",
-			"${3}"
+			"\t${2:<!-- flex container -->}",
+			"</mu-flex-box>"
 		],
 		"description": "MusselFlexBox --> Basic flex container"
 	},
-
 	"Basic: Layout mu-h-box": {
 		"prefix": "muhbox",
 		"body": [
 			"<mu-h-box>",
-				"\t${1:<!-- row container -->}",
-			"</mu-h-box>",
-			"${2}"
+			"\t${1:<!-- row container -->}",
+			"</mu-h-box>"
 		],
 		"description": "MusselHBox --> Flex box with 'row' direction."
 	},
-	
 	"Basic: Layout mu-v-box": {
 		"prefix": "muvbox",
 		"body": [
 			"<mu-v-box>",
 			"\t${1}",
-			"</mu-v-box>",
-			"${2}"
+			"</mu-v-box>"
 		],
 		"description": "MusselVBox --> Flex box with the direction of row."
 	},
-	
 	"Basic: Layout mu-space": {
 		"prefix": "muspace",
 		"body": [
-			"<mu-space />",
-			"${1}"
+			"<mu-space />"
 		],
 		"description": "Spacing --> item of flex container"
 	},
-
 	"Basic: Layout mu-splitter": {
 		"prefix": "musplitter",
 		"body": [
-			"<mu-splitter />",
-			"${1}"
+			"<mu-splitter />"
 		],
 		"description": "Separate --> and resize cells of flex container."
 	},
-
-
 	"Navigation: Bar mu-bar": {
 		"prefix": "mubar",
 		"body": [
 			"<mu-bar size=\"${1}\">",
-				"\t${2:<!-- mu-bar content -->}",
-			"</mu-bar>",
-			"${3}"
+			"\t${2:<!-- mu-bar content -->}",
+			"</mu-bar>"
 		],
 		"description": "MusselBar --> Used for toolbar or navigation menu."
 	},
-   
-
 	"Navigation: Tabs mu-tabs": {
 		"prefix": "mutabs",
 		"body": [
 			"<mu-tabs",
 			"\tsize=\"${1}\" :tab-items=\"${12}\" :active-tab=\"${3}\"",
 			"\t@change=\"${3}\">",
-				"\t<mu-tab-panel name=\"${4}\">",
-					"\t${4}",
-				"\t<mu-tab-panel>",
-			"</mu-tabs>",
-			"${5}"
+			"\t<mu-tab-panel name=\"${4}\">",
+			"\t${4}",
+			"\t<mu-tab-panel>",
+			"</mu-tabs>"
 		],
 		"description": "MusselTabs --> Container for tab pages."
 	},
-
 	"Navigation: Tabs mu-tab-panel": {
 		"prefix": "mutabpanel",
 		"body": [
 			"<mu-tab-panel name=\"${1}\" label=\"${2}\">",
 			"\t${3}",
-			"<mu-tab-panel>",
-			"${4}"
+			"<mu-tab-panel>"
 		],
 		"description": "MusselTabPanel --> Tab page, item of tabs."
 	},
-
 	"Basic: Button mu-button": {
 		"prefix": "mub",
 		"body": [
-			"<mu-button", 
-				"\tbutton-type=\"${1|primary,normal,submit,danger|}\"", 
-				"\tbutton-style=\"${2|normal,outline,text,link|}\"",
-				"\tbutton-shape=\"${2|normal,round|}\"",
-				"\ticon-class=\"$4\"",
-				"\t@click=\"$3\">",
-			"</mu-button>",
-			"${5}"
+			"<mu-button",
+			"\tbutton-type=\"${1|primary,normal,submit,danger|}\"",
+			"\tbutton-style=\"${2|normal,outline,text,link|}\"",
+			"\tbutton-shape=\"${2|normal,round|}\"",
+			"\ticon-class=\"$4\"",
+			"\t@click=\"$3\">",
+			"</mu-button>"
 		],
 		"description": "MusselButton --> Basic button component, fire 'click' event when tapped."
 	},
-
 	"Basic: Button mu-icon-button": {
 		"prefix": "mubi",
 		"body": [
-			"<mu-icon-button>$1</mu-icon-button>",
-			"${2}"
+			"<mu-icon-button>$1</mu-icon-button>"
 		],
 		"description": "MusselIconButton --> button only with a icon"
 	},
-
 	"Basic: Button mu-button-group": {
 		"prefix": "mubg",
 		"body": [
 			"<mu-button-group>",
-				"\t<mu-button>$1</mu-button>",
-				"\t<mu-button>$2</mu-button>",
-			"</mu-button-group>",
-			"${3}"
+			"\t<mu-button>$1</mu-button>",
+			"\t<mu-button>$2</mu-button>",
+			"</mu-button-group>"
 		],
 		"description": "MusselButtonGroup --> combine buttons that with relative function."
 	},
-
 	"Form: mu-form": {
 		"prefix": "muform",
 		"body": [
-			"<mu-form", 
-				"\tlayout=\"${1|flow, column, row|}\"",
-				"\tformStyle=\"${2|normal, table|}\">",
-				"\tlabelWidth=\"$3\">",
-					"\t<mu-form-field label=\"$4\" size=\"$5\">",
-						"\t<mu-input :value=\"$6\" />",
-					"\t</mu-form-field>",
-					"\t<mu-form-field label=\"$7\">",
-						"\t<mu-editor",
-						"\tv-model.trim=\"$8\"",
-						"\ttype=\"$9\"",
-						"\tplaceholder=\"$10\" />",
-					"\t</mu-form-field>",
-					"\t<mu-form-field",
-					"\tlabel=\"$11\">",
-					"\t<mu-date-editor v-model=\"$12\"",
-						"\tselect-mode=\"$13\"",
-						"\tlanguage=\"$14\"",
-						"\tplaceholder=\"$15\"",
-						"\t:clearable=\"$16\"",
-						"\t:range-start=\"$17\"",
-						"\t:readonly=\"$18\" />",
-					"\t</mu-form-field>",
-			"</mu-form>",
-			"${19}"
+			"<mu-form",
+			"\tlayout=\"${1|flow, column, row|}\"",
+			"\tformStyle=\"${2|normal, table|}\">",
+			"\tlabelWidth=\"$3\">",
+			"\t<mu-form-field label=\"$4\" size=\"$5\">",
+			"\t<mu-input :value=\"$6\" />",
+			"\t</mu-form-field>",
+			"\t<mu-form-field label=\"$7\">",
+			"\t<mu-editor",
+			"\tv-model.trim=\"$8\"",
+			"\ttype=\"$9\"",
+			"\tplaceholder=\"$10\" />",
+			"\t</mu-form-field>",
+			"\t<mu-form-field",
+			"\tlabel=\"$11\">",
+			"\t<mu-date-editor v-model=\"$12\"",
+			"\tselect-mode=\"$13\"",
+			"\tlanguage=\"$14\"",
+			"\tplaceholder=\"$15\"",
+			"\t:clearable=\"$16\"",
+			"\t:range-start=\"$17\"",
+			"\t:readonly=\"$18\" />",
+			"\t</mu-form-field>",
+			"</mu-form>"
 		],
 		"description": "MusselForm --> 由输入框、选择器等控件组成，用以收集、校验、提交数据"
 	},
@@ -171,65 +144,54 @@
 		"prefix": "muformfield",
 		"body": [
 			"<mu-form-field",
-				"\tsize=\"$1\"",
-				"\tlabel=\"$2\"",
-				"\tlabel-width=\"$3\"",
-				"\tlabel-align=\"$4\"",
-				"\t:required=\"$5\" >",
-			"</mu-form-field>",
-			"${6}"
+			"\tsize=\"$1\"",
+			"\tlabel=\"$2\"",
+			"\tlabel-width=\"$3\"",
+			"\tlabel-align=\"$4\"",
+			"\t:required=\"$5\" >",
+			"</mu-form-field>"
 		],
 		"description": "MusselFormField --> "
 	},
-
 	"Form: mu-form-row": {
 		"prefix": "muformrow",
 		"body": [
 			"<mu-form-row>",
-			 "\t${1:<!-- form content -->}",
-			"</mu-form-row>",
-			"${2}"
+			"\t${1:<!-- form content -->}",
+			"</mu-form-row>"
 		],
 		"description": "MusselFormRow --> form item box"
 	},
-
 	"Form: mu-input": {
 		"prefix": "mui",
 		"body": [
-			"<mu-input :value=\"$1\" readonly placeholder=\"$2\"></mu-input>",
-			"${3}"
+			"<mu-input :value=\"$1\" readonly placeholder=\"$2\"></mu-input>"
 		],
 		"description": "MusselInput --> Base input component, for building complex editors."
 	},
-
 	"Form: mu-editor": {
 		"prefix": "muedi",
 		"body": [
-			"<mu-editor", 
-				"\tv-model=\"$1\"", 
-				"\ttype=\"${2|text, number, date, |}\"", 
-				"\tsize=\"$3\"",
-				"\treadonly=\"$4\">",
-				"\tplaceholder=\"$5\">",
-			"</mu-editor>",
-			"${6}"
+			"<mu-editor",
+			"\tv-model=\"$1\"",
+			"\ttype=\"${2|text, number, date, |}\"",
+			"\tsize=\"$3\"",
+			"\treadonly=\"$4\">",
+			"\tplaceholder=\"$5\">",
+			"</mu-editor>"
 		],
 		"description": "MusselEditor --> Input component, with extra icon and clearable."
 	},
-
 	"Form: mu-combo-box": {
 		"prefix": "mucobox",
 		"body": [
 			"<mu-combo-box",
-				"v-model=\"$1\" ",
-				":options=\"$2\"",
-				"@change=\"$3\" />",
-			"${4}"
+			"v-model=\"$1\" ",
+			":options=\"$2\"",
+			"@change=\"$3\" />"
 		],
 		"description": "MusselComboBox --> Input component, with dropdown options."
 	},
-
-
 	"Form: mu-date-editor": {
 		"prefix": "mudateeditor",
 		"body": [
@@ -237,155 +199,149 @@
 			"\tv-model=\"$1\"",
 			"\tselect-mode=\"$3\"",
 			"\t:clearable=\"$6\"",
-      "\tlanguage=\"$4\"",
+			"\tlanguage=\"$4\"",
 			"\tplaceholder=\"$5\"",
 			"\t:range-start=\"$7\"",
-			"\t:readonly=\"$8\" />",
-			"${3}"
+			"\t:readonly=\"$8\" />"
 		],
 		"description": "MusselDateEditor --> Date picker"
 	},
-
 	"Notice: Messagebox Alert": {
 		"prefix": "mumeal",
 		"body": [
 			"alert('You have got a message.', () => {",
-  			"\tconsole.log('done')",
-			"})",
-			"${1}"
+			"\tconsole.log('done')",
+			"})"
 		],
 		"description": "Messagebox --> alert"
 	},
-
 	"Notice: Messagebox Confirm": {
 		"prefix": "mumecon",
 		"body": [
 			"confirm('Quit ?', btn => {",
 			"\tif (btn === 'ok') quit()",
-			"})",
-			"${1}"
+			"})"
 		],
 		"description": "Messagebox --> confirm"
 	},
-
 	"Notice: Messagebox Warn": {
 		"prefix": "mumewar",
 		"body": [
 			"warn('Quit ?', btn => {",
 			"\tif (btn === 'ok') delete()",
-			"})",
-			"${1}"
+			"})"
 		],
 		"description": "Messagebox --> warn"
 	},
-
 	"Notice: Notify": {
 		"prefix": "munot",
 		"body": [
-			"notify(\"${1|info, success, warning, error|}\", \"${2:message}\")",
-			"${4}"
+			"notify(\"${1|info, success, warning, error|}\", \"${2:message}\")"
 		],
 		"description": "Show message on a floating bar, then dismiss itself."
 	},
-
 	"Navigation: mu-dropdown": {
 		"prefix": "mudr",
 		"body": [
 			"<mu-dropdown  trigger-action=\"${1:|click, hover|}\" itemclick=\"${2:click}\" popup-width=\"$3\" popup-height=\"$4\" >",
-				"\t<mu-dropdown-item :readonly=\"true\">",
-				"\t${5:<--! Element -->}",
-				"\t</mu-dropdown-item>",
-			"</mu-dropdown>",
-			"${6}"
+			"\t<mu-dropdown-item :readonly=\"true\">",
+			"\t${5:<--! Element -->}",
+			"\t</mu-dropdown-item>",
+			"</mu-dropdown>"
 		],
 		"description": "MusselDropdown --> Tap or hover the trigger, and make something popup"
 	},
-
 	"Navigation: mu-dropdown-item": {
 		"prefix": "mudri",
 		"body": [
-			"<mu-dropdown-item class=\"${1:mu-background-grey}\" :readonly=\"$2\">$3</mu-dropdown-item>",
-			"${3}"
+			"<mu-dropdown-item class=\"${1:mu-background-grey}\" :readonly=\"$2\">$3</mu-dropdown-item>"
 		],
 		"description": "MusselDropdownItem --> List item in dropdown panel"
 	},
-
 	"Others: mu-dialog": {
 		"prefix": "mudi",
 		"body": [
-				"<mu-dialog width=\"${1:1000px}\"",
-					"\theight=\"$2\"",
-					"\ttitle=\"$3\"",
-					"\t:buttons=\"$4\"",
-					"\t:visible=\"$5\"",
-					"\tclass=\"mu-flex-box\"",
-					"\tmask-action=\"none\"",
-					"\t@buttonclick=\"$6\"",
-					"\t@show=\"$7\"",
-					"\t@hide=\"$8\"",
-					"\t@change=\"$9\">",
-					"\t<mu-v-box class=\"mu-absolute-fit\" content-spacing>",
-						"\t<kaka-grid class=\"mu-absolute-fit mu-bordered\":columns=\"columns\" :records=\"$10\" />",
-					"\t</mu-v-box>",
-				"</mu-dialog>",
-			"${11}"
+			"<mu-dialog width=\"${1:1000px}\"",
+			"\theight=\"$2\"",
+			"\ttitle=\"$3\"",
+			"\t:buttons=\"$4\"",
+			"\t:visible=\"$5\"",
+			"\tclass=\"mu-flex-box\"",
+			"\tmask-action=\"none\"",
+			"\t@buttonclick=\"$6\"",
+			"\t@show=\"$7\"",
+			"\t@hide=\"$8\"",
+			"\t@change=\"$9\">",
+			"\t<mu-v-box class=\"mu-absolute-fit\" content-spacing>",
+			"\t<kaka-grid class=\"mu-absolute-fit mu-bordered\":columns=\"columns\" :records=\"$10\" />",
+			"\t</mu-v-box>",
+			"</mu-dialog>"
 		],
 		"description": "Popup window, within a modal mask."
 	},
-		"Http: Get": {
-			"prefix": "muapiget",
-			"body": [
-				"const result = await this.$http.get('url','params')",
-				"${1}"
-			],
-			"description": "Methods get"
-		},
-		"Http: Post": {
-			"prefix": "muapipost",
-			"body": [
-				"const result = await this.$http.post('url','params')",
-				"${1}"
-			],
-			"description": "Methods post"
-		},
-		"Http: Patch": {
-			"prefix": "muapipatch",
-			"body": [
-				"const result = await this.$http.patch('url','params')",
-				"${1}"
-			],
-			"description": "Methods patch"
-		},
-		"Http: Delete": {
-			"prefix": "muapidelete",
-			"body": [
-				"const result = await this.$http.delete('url','params')",
-				"${1}"
-			],
-			"description": "Methods delete"
-		},
-		"Store: Dispatch": {
-			"prefix": "mustodp",
-			"body": [
-				"await this.$store.dispatch(method, params)",
-				"${1}"
-			],
-			"description": "Store dispatch"
-		},
-		"Store: Commit": {
-			"prefix": "mustocm",
-			"body": [
-				"this.$store.commit(method, params)",
-				"${1}"
-			],
-			"description": "Store Commit"
-		},
-		"Context: orgId": {
-			"prefix": "muorgid",
-			"body": [
-				"this.$context.orgId",
-				"${1}"
-			],
-			"description": "Context orgId"
-		}
+	"VueTMP: snippet": {
+		"prefix": "muvue",
+		"body": [
+			"<template>",
+			"\t<mu-v-box>$1</mu-v-box>",
+			"\t</template>",
+			"\t<script>",
+			"\timport { mapState } from 'vuex'",
+			"\texport default {",
+			"\t$1",
+			"\t}",
+			"\t</script>",
+			"$2"
+		],
+		"description": "Context orgId"
+	},
+	"Http: Get": {
+		"prefix": "muapiget",
+		"body": [
+			"const result = await this.$http.get('url', 'params')"
+		],
+		"description": "Methods get"
+	},
+	"Http: Post": {
+		"prefix": "muapipost",
+		"body": [
+			"const result = await this.$http.post('url', 'params')"
+		],
+		"description": "Methods post"
+	},
+	"Http: Patch": {
+		"prefix": "muapipatch",
+		"body": [
+			"const result = await this.$http.patch('url', 'params')"
+		],
+		"description": "Methods patch"
+	},
+	"Http: Delete": {
+		"prefix": "muapidelete",
+		"body": [
+			"const result = await this.$http.delete('url', 'params')"
+		],
+		"description": "Methods delete"
+	},
+	"Store: Dispatch": {
+		"prefix": "musdispatch",
+		"body": [
+			"await this.$store.dispatch(method, params)"
+		],
+		"description": "Store dispatch"
+	},
+	"Store: Commit": {
+		"prefix": "muscommit",
+		"body": [
+			"this.$store.commit(method, params)"
+		],
+		"description": "Store Commit"
+	},
+	"Context: orgId": {
+		"prefix": "mucorgId",
+		"body": [
+			"this.$context.orgId"
+		],
+		"description": "Context orgId"
+	}
 }
