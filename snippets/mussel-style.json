@@ -1,0 +1,617 @@
+{
+  "padding-all": {
+    "prefix": "p-all",
+    "body": [
+      "padding='all'"
+    ],
+    "description": "padding='all' padding 8"
+  },
+  "padding-all-x2": {
+    "prefix": "p-allx2",
+    "body": [
+      "padding='allx2'"
+    ],
+    "description": "padding='allx2' padding 8x2"
+  },
+  "padding-all-x4": {
+    "prefix": "p-allx4",
+    "body": [
+      "padding='allx4'"
+    ],
+    "description": "padding='allx4' padding 8x4"
+  },
+  "padding-hori": {
+    "prefix": "p-hori",
+    "body": [
+      "padding='hori'"
+    ],
+    "description": "padding='hori' padding 8"
+  },
+  "padding-hori-x2": {
+    "prefix": "p-horix2",
+    "body": [
+      "padding='horix2'"
+    ],
+    "description": "padding='horix2' padding 8x2"
+  },
+  "padding-hori-x4": {
+    "prefix": "p-horix4",
+    "body": [
+      "padding='horix4'"
+    ],
+    "description": "padding='horix4' padding 8x4"
+  },
+  "padding-vert": {
+    "prefix": "p-vert",
+    "body": [
+      "padding='vert'"
+    ],
+    "description": "padding='vert' padding 8"
+  },
+  "padding-vert-x2": {
+    "prefix": "p-vertx2",
+    "body": [
+      "padding='vertx2'"
+    ],
+    "description": "padding='vertx2' padding 8x2"
+  },
+  "padding-vert-x4": {
+    "prefix": "p-vertx4",
+    "body": [
+      "padding='vertx4'"
+    ],
+    "description": "padding='vertx4' padding 8x4"
+  },
+  "padding-top": {
+    "prefix": "p-top",
+    "body": [
+      "padding='top'"
+    ],
+    "description": "padding='top' padding 8"
+  },
+  "padding-top-x2": {
+    "prefix": "p-topx2",
+    "body": [
+      "padding='topx2'"
+    ],
+    "description": "padding='topx2' padding 8x2"
+  },
+  "padding-top-x4": {
+    "prefix": "p-topx4",
+    "body": [
+      "padding='topx4'"
+    ],
+    "description": "padding='topx4' padding 8x4"
+  },
+  "padding-left": {
+    "prefix": "p-left",
+    "body": [
+      "padding='left'"
+    ],
+    "description": "padding='left' padding 8"
+  },
+  "padding-left-x2": {
+    "prefix": "p-leftx2",
+    "body": [
+      "padding='leftx2'"
+    ],
+    "description": "padding='leftx2' padding 8x2"
+  },
+  "padding-left-x4": {
+    "prefix": "p-leftx4",
+    "body": [
+      "padding='leftx4'"
+    ],
+    "description": "padding='leftx4' padding 8x4"
+  },
+  "padding-right": {
+    "prefix": "p-right",
+    "body": [
+      "padding='right'"
+    ],
+    "description": "padding='right' padding 8"
+  },
+  "padding-right-x2": {
+    "prefix": "p-rightx2",
+    "body": [
+      "padding='rightx2'"
+    ],
+    "description": "padding='rightx2' padding 8x2"
+  },
+  "padding-right-x4": {
+    "prefix": "p-rightx4",
+    "body": [
+      "padding='rightx4'"
+    ],
+    "description": "padding='rightx4' padding 8x4"
+  },
+  "padding-bottom": {
+    "prefix": "p-bottom",
+    "body": [
+      "padding='bottom'"
+    ],
+    "description": "padding='bottom' padding 8"
+  },
+  "padding-bottom-x2": {
+    "prefix": "p-bottomx2",
+    "body": [
+      "padding='bottomx2'"
+    ],
+    "description": "padding='bottomx2' padding 8x2"
+  },
+  "padding-bottom-x4": {
+    "prefix": "p-bottomx4",
+    "body": [
+      "padding='bottomx4'"
+    ],
+    "description": "padding='bottomx4' padding 8x4"
+  },
+  "margin-all": {
+    "prefix": "m-all",
+    "body": [
+      "margin='all'"
+    ],
+    "description": "margin='all' margin 8"
+  },
+  "margin-all-x2": {
+    "prefix": "m-allx2",
+    "body": [
+      "margin='allx2'"
+    ],
+    "description": "margin='allx2' margin 8x2"
+  },
+  "margin-all-x4": {
+    "prefix": "m-allx4",
+    "body": [
+      "margin='allx4'"
+    ],
+    "description": "margin='allx4' margin 8x4"
+  },
+  "margin-hori": {
+    "prefix": "m-hori",
+    "body": [
+      "margin='hori'"
+    ],
+    "description": "margin='hori' margin 8"
+  },
+  "margin-hori-x2": {
+    "prefix": "m-horix2",
+    "body": [
+      "margin='horix2'"
+    ],
+    "description": "margin='horix2' margin 8x2"
+  },
+  "margin-hori-x4": {
+    "prefix": "m-horix4",
+    "body": [
+      "margin='horix4'"
+    ],
+    "description": "margin='horix4' margin 8x4"
+  },
+  "margin-vert": {
+    "prefix": "m-vert",
+    "body": [
+      "margin='vert'"
+    ],
+    "description": "margin='vert' margin 8"
+  },
+  "margin-vert-x2": {
+    "prefix": "m-vertx2",
+    "body": [
+      "margin='vertx2'"
+    ],
+    "description": "margin='vertx2' margin 8x2"
+  },
+  "margin-vert-x4": {
+    "prefix": "m-vertx4",
+    "body": [
+      "margin='vertx4'"
+    ],
+    "description": "margin='vertx4' margin 8x4"
+  },
+  "margin-top": {
+    "prefix": "m-top",
+    "body": [
+      "margin='top'"
+    ],
+    "description": "margin='top' margin 8"
+  },
+  "margin-top-x2": {
+    "prefix": "m-topx2",
+    "body": [
+      "margin='topx2'"
+    ],
+    "description": "margin='topx2' margin 8x2"
+  },
+  "margin-top-x4": {
+    "prefix": "m-topx4",
+    "body": [
+      "margin='topx4'"
+    ],
+    "description": "margin='topx4' margin 8x4"
+  },
+  "margin-left": {
+    "prefix": "m-left",
+    "body": [
+      "margin='left'"
+    ],
+    "description": "margin='left' margin 8"
+  },
+  "margin-left-x2": {
+    "prefix": "m-leftx2",
+    "body": [
+      "margin='leftx2'"
+    ],
+    "description": "margin='leftx2' margin 8x2"
+  },
+  "margin-left-x4": {
+    "prefix": "m-leftx4",
+    "body": [
+      "margin='leftx4'"
+    ],
+    "description": "margin='leftx4' margin 8x4"
+  },
+  "margin-right": {
+    "prefix": "m-right",
+    "body": [
+      "margin='right'"
+    ],
+    "description": "margin='right' margin 8"
+  },
+  "margin-right-x2": {
+    "prefix": "m-rightx2",
+    "body": [
+      "margin='rightx2'"
+    ],
+    "description": "margin='rightx2' margin 8x2"
+  },
+  "margin-right-x4": {
+    "prefix": "m-rightx4",
+    "body": [
+      "margin='rightx4'"
+    ],
+    "description": "margin='rightx4' margin 8x4"
+  },
+  "margin-bottom": {
+    "prefix": "m-bottom",
+    "body": [
+      "margin='bottom'"
+    ],
+    "description": "margin='bottom' margin 8"
+  },
+  "margin-bottom-x2": {
+    "prefix": "m-bottomx2",
+    "body": [
+      "margin='bottomx2'"
+    ],
+    "description": "margin='bottomx2' margin 8x2"
+  },
+  "margin-bottom-x4": {
+    "prefix": "m-bottomx4",
+    "body": [
+      "margin='bottomx4'"
+    ],
+    "description": "margin='bottomx4' margin 8x4"
+  },
+  "text-ellipsis": {
+    "prefix": "text-ellipsis",
+    "body": [
+      "mu-text-ellipsis"
+    ]
+  },
+  "text-color-normal": {
+    "prefix": "text-color-normal",
+    "body": [
+      "mu-text-color-normal"
+    ]
+  },
+  "text-color-weak": {
+    "prefix": "text-color-weak",
+    "body": [
+      "mu-text-color-weak"
+    ]
+  },
+  "text-color-title": {
+    "prefix": "text-color-title",
+    "body": [
+      "mu-text-color-title"
+    ]
+  },
+  "text-color-subtitle": {
+    "prefix": "text-color-subtitle",
+    "body": [
+      "mu-text-color-subtitle"
+    ]
+  },
+  "text-title": {
+    "prefix": "text-title",
+    "body": [
+      "mu-text-title"
+    ]
+  },
+  "text-subtitle": {
+    "prefix": "text-subtitle",
+    "body": [
+      "mu-text-subtitle"
+    ]
+  },
+  "text-weak": {
+    "prefix": "text-weak",
+    "body": [
+      "mu-text-weak"
+    ]
+  },
+  "text-body": {
+    "prefix": "text-body",
+    "body": [
+      "mu-text-body"
+    ]
+  },
+  "text-color-primary": {
+    "prefix": "text-color-primary",
+    "body": [
+      "mu-text-color-primary"
+    ]
+  },
+  "text-color-success": {
+    "prefix": "text-color-success",
+    "body": [
+      "mu-text-color-success"
+    ]
+  },
+  "text-color-danger": {
+    "prefix": "text-color-danger",
+    "body": [
+      "mu-text-color-danger"
+    ]
+  },
+  "text-color-warning": {
+    "prefix": "text-color-warning",
+    "body": [
+      "mu-text-color-warning"
+    ]
+  },
+  "text-color-highlight": {
+    "prefix": "text-color-highlight",
+    "body": [
+      "mu-text-color-highlight"
+    ]
+  },
+  "mu-shadow": {
+    "prefix": "mu-shadow",
+    "body": [
+      "mu-shadow"
+    ]
+  },
+  "shadow": {
+    "prefix": "shadow",
+    "body": [
+      "shadow"
+    ]
+  },
+  "border-primary": {
+    "prefix": "border-primary",
+    "body": [
+      "border='primary'"
+    ]
+  },
+  "border-danger": {
+    "prefix": "border-danger",
+    "body": [
+      "border='danger'"
+    ]
+  },
+  "border-light": {
+    "prefix": "border-light",
+    "body": [
+      "border='light'"
+    ]
+  },
+  "border-dashed": {
+    "prefix": "border-dashed",
+    "body": [
+      "border='dashed'"
+    ]
+  },
+  "border-dotted": {
+    "prefix": "border-dotted",
+    "body": [
+      "border='dotted'"
+    ]
+  },
+  "border-none": {
+    "prefix": "border-none",
+    "body": [
+      "border='none'"
+    ]
+  },
+  "border-all": {
+    "prefix": "b-all",
+    "body": [
+      "border='all'"
+    ],
+    "description": "border='all' border width 1"
+  },
+  "border-all-x2": {
+    "prefix": "b-allx2",
+    "body": [
+      "border='allx2'"
+    ],
+    "description": "border='allx2' border width 1x2"
+  },
+  "border-top": {
+    "prefix": "b-top",
+    "body": [
+      "border='top'"
+    ],
+    "description": "border='top' border width 1"
+  },
+  "border-top-x2": {
+    "prefix": "b-topx2",
+    "body": [
+      "border='topx2'"
+    ],
+    "description": "border='topx2' border width 1x2"
+  },
+  "border-left": {
+    "prefix": "b-left",
+    "body": [
+      "border='left'"
+    ],
+    "description": "border='left' border width 1"
+  },
+  "border-left-x2": {
+    "prefix": "b-leftx2",
+    "body": [
+      "border='leftx2'"
+    ],
+    "description": "border='leftx2' border width 1x2"
+  },
+  "border-right": {
+    "prefix": "b-right",
+    "body": [
+      "border='right'"
+    ],
+    "description": "border='right' border width 1"
+  },
+  "border-right-x2": {
+    "prefix": "b-rightx2",
+    "body": [
+      "border='rightx2'"
+    ],
+    "description": "border='rightx2' border width 1x2"
+  },
+  "border-bottom": {
+    "prefix": "b-bottom",
+    "body": [
+      "border='bottom'"
+    ],
+    "description": "border='bottom' border width 1"
+  },
+  "border-bottom-x2": {
+    "prefix": "b-bottomx2",
+    "body": [
+      "border='bottomx2'"
+    ],
+    "description": "border='bottomx2' border width 1x2"
+  },
+  "mu-background-normal": {
+    "prefix": "bg-normal",
+    "body": [
+      "mu-background-normal"
+    ],
+    "description": "background normal"
+  },
+  "mu-background-grey": {
+    "prefix": "bg-grey",
+    "body": [
+      "mu-background-grey"
+    ],
+    "description": "background grey"
+  },
+  "mu-background-light-grey": {
+    "prefix": "bg-light-grey",
+    "body": [
+      "mu-background-light-grey"
+    ],
+    "description": "background light-grey"
+  },
+  "mu-background-highlight": {
+    "prefix": "bg-highlight",
+    "body": [
+      "mu-background-highlight"
+    ],
+    "description": "background highlight"
+  },
+  "mu-background-info": {
+    "prefix": "bg-info",
+    "body": [
+      "mu-background-info"
+    ],
+    "description": "background info"
+  },
+  "mu-background-primary": {
+    "prefix": "bg-primary",
+    "body": [
+      "mu-background-primary"
+    ],
+    "description": "background primary"
+  },
+  "mu-background-success": {
+    "prefix": "bg-success",
+    "body": [
+      "mu-background-success"
+    ],
+    "description": "background success"
+  },
+  "mu-background-danger": {
+    "prefix": "bg-danger",
+    "body": [
+      "mu-background-danger"
+    ],
+    "description": "background danger"
+  },
+  "mu-background-warning": {
+    "prefix": "bg-warning",
+    "body": [
+      "mu-background-warning"
+    ],
+    "description": "background warning"
+  },
+  "mu-background-disabled": {
+    "prefix": "bg-disabled",
+    "body": [
+      "mu-background-disabled"
+    ],
+    "description": "background disabled"
+  },
+  "align-items-flex-start": {
+    "prefix": "align-items-flex-start",
+    "body": [
+      "align-items='flex-start'"
+    ],
+    "description": "align-items flex-start"
+  },
+  "align-items-center": {
+    "prefix": "align-items-center",
+    "body": [
+      "align-items='center'"
+    ],
+    "description": "align-items center"
+  },
+  "align-items-stretch": {
+    "prefix": "align-items-stretch",
+    "body": [
+      "align-items='stretch'"
+    ],
+    "description": "align-items stretch"
+  },
+  "justify-content-center": {
+    "prefix": "justify-content-center",
+    "body": [
+      "justify-content='center'"
+    ],
+    "description": "justify-content center"
+  },
+  "justify-content-start": {
+    "prefix": "justify-content-start",
+    "body": [
+      "justify-content='start'"
+    ],
+    "description": "justify-content start"
+  },
+  "justify-content-end": {
+    "prefix": "justify-content-end",
+    "body": [
+      "justify-content='end'"
+    ],
+    "description": "justify-content end"
+  },
+  "flex-center": {
+    "prefix": "flex-center",
+    "body": [
+      "flex-center"
+    ],
+    "description": "align-items: center; justify-content: center;"
+  }
+}

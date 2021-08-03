@@ -1,0 +1,212 @@
+{
+  "typeScriptVueComponentTemplate": {
+    "prefix": "tsv-temp",
+    "body": [
+      "import { computed, defineComponent ,unref, ref, watch, onMounted, onUpdated, onUnmounted, reactive, toRefs } from 'vue'",
+      "",
+      "export default defineComponent({",
+      "\tname: 'ComponentName',",
+      "",
+      "\tsetup() {",
+      "\tconst text = ref('HelloWorld')",
+      "",
+      "\tconst book = reactive({",
+      "\t\tauthor: 'Vue ',",
+      "\t\ttitle: 'Vue 3 ',",
+      "\t})",
+      "",
+      "\tlet { author, title } = toRefs(book)",
+      "",
+      "\ttitle.value = 'Vue 3 Detailed'",
+      "",
+      "\tconst computed = computed(()=> unref(book))",
+      "\twatch(title, (new, old) => {",
+      "\t\t$0",
+      "\t})",
+      "\tonMounted(() => {",
+      "\tconsole.log('mounted!')",
+      "\t})",
+      "",
+      "\tonUpdated(() => {",
+      "\t\tconsole.log('updated!')",
+      "\t})",
+      "",
+      "\tonUnmounted(() => {",
+      "\t\tconsole.log('unmounted!')",
+      "\t})",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t{ text.value }",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "})",
+      ""
+    ],
+    "description": "vue-tsx 模板"
+  },
+  "typeScriptVueDefineComponent": {
+    "prefix": "tsv-def",
+    "body": [
+      "import { defineComponent } from 'vue'",
+      "",
+      "export default defineComponent({",
+      "\tname: 'ComponentName',",
+      "",
+      "\tsetup() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t{ text.value }",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "})",
+      ""
+    ],
+    "description": "简易 defineComponent 组件"
+  },
+  "typeScriptVueFunctionalExportComponent": {
+    "prefix": "tsv-cf",
+    "body": [
+      "function name() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default name",
+      ""
+    ],
+    "description": "Creates a Vue Functional Component with ES7 module system and TypeScript interface"
+  },
+  "export": {
+    "prefix": "vue3-export default",
+    "body": [
+      "export default {$1}"
+    ],
+    "description": "export"
+  },
+  "setup": {
+    "prefix": "vue3-setup",
+    "body": [
+      "setup(${1:props}) {$2}"
+    ],
+    "description": "setup"
+  },
+  "reactive": {
+    "prefix": "vue3-reactive",
+    "body": [
+      "const data = reactive({$1})"
+    ],
+    "description": "reactive"
+  },
+  "watchFn": {
+    "prefix": "vue3-watch",
+    "body": [
+      "watch(() => {$1})"
+    ],
+    "description": "watchFn"
+  },
+  "watchEffect": {
+    "prefix": "vue3-watchEffect",
+    "body": [
+      "watchEffect(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "watchEffect"
+  },
+  "watchArray": {
+    "prefix": "vue3-watchArray",
+    "body": [
+      "watch([${1:foo}, ${2:bar}], ([new${1}, new${2}], [prev${1}, prev${2}]) => {",
+      "\t${3}",
+      "})"
+    ],
+    "description": "watch as array"
+  },
+  "Vue3:computed": {
+    "prefix": "vue3-computed",
+    "body": [
+      "computed(() => {",
+      "\tget: () => {}",
+      "\tset: () => {}",
+      "})"
+    ],
+    "description": "computed"
+  },
+  "toRefs": {
+    "prefix": "vue3-toRefs",
+    "body": [
+      "toRefs($1)"
+    ],
+    "description": "toRefs"
+  },
+  "ref": {
+    "prefix": "vue3-ref",
+    "body": [
+      "ref($1)"
+    ],
+    "description": "ref"
+  },
+  "props3": {
+    "prefix": "vue3-props",
+    "body": [
+      "props{",
+      "\t$1: $2",
+      "}"
+    ],
+    "description": "toRefs"
+  },
+  "onBeforeMount": {
+    "prefix": "vue3-onBeforeMount",
+    "body": [
+      "onBeforeMount(() => {$1})"
+    ],
+    "description": "onBeforeMount"
+  },
+  "onMounted": {
+    "prefix": "vue3-onMounted",
+    "body": [
+      "onMounted(() => {$1})"
+    ],
+    "description": "onMounted"
+  },
+  "onBeforeUpdate": {
+    "prefix": "vue3-onBeforeUpdate",
+    "body": [
+      "onBeforeUpdate(() => {$1})"
+    ],
+    "description": "onBeforeUpdate"
+  },
+  "onUpdated": {
+    "prefix": "vue3-onUpdated",
+    "body": [
+      "onUpdated(() => {$1})"
+    ],
+    "description": "onUpdated"
+  },
+  "onBeforeUnmount": {
+    "prefix": "vue3-onBeforeUnmount",
+    "body": [
+      "onBeforeUnmount(() => {$1})"
+    ],
+    "description": "onBeforeUnmount"
+  },
+  "onUnmounted": {
+    "prefix": "vue3-onUnmounted",
+    "body": [
+      "onUnmounted(() => {$1})"
+    ],
+    "description": "onUnmounted"
+  },
+  "onErrorCaptured": {
+    "prefix": "vue3-onErrorCaptured",
+    "body": [
+      "onErrorCaptured(() => {$1})"
+    ],
+    "description": "onErrorCaptured"
+  }
+}

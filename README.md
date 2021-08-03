@@ -1,3 +1,10 @@
+<!--
+ * @Author: xll
+ * @Date: 2020-06-06 22:12:57
+ * @LastEditors: xll
+ * @LastEditTime: 2021-04-26 16:44:00
+ * @FilePath: /mcweb-snippets/README.md
+-->
 ## This is Code Snippets of mcweb for VS Code.
 
 ### Install
@@ -77,3 +84,16 @@
 
 
 
+## 新增vue3 相关API 
+
+ 使用方式 `vue3-`
+
+ ## 新增 mussel base-style
+  - background
+  - border
+  - margin
+  - padding
+  - text
+  - shadow
+
+## 新增 layout 文件中相关style  flex 对齐样式 
