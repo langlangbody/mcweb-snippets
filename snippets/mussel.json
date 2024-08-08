@@ -289,7 +289,7 @@
 		"description": "页面模版"
 	},
 	"mcPage: nav-wrapper": {
-		"prefix": "mu3part-w",
+		"prefix": "mu3nav-w",
 		"body": [
 			"<nav-wrapper>",
 			"\t${2:<!-- container -->}",
@@ -298,7 +298,7 @@
 		"description": "导航模版top slot(header-left、header-right)"
 	},
 	"mcPage: dlg-wrapper": {
-		"prefix": "mu3part-w",
+		"prefix": "mu3dlg-w",
 		"body": [
 			"<dlg-wrapper",
 			"\tv-model=\"$1\"",
