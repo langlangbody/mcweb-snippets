@@ -62,10 +62,10 @@
 		"prefix": "mutabs",
 		"body": [
 			"<mu-tabs",
-			"\tsize=\"${1}\" :tab-items=\"${12}\" :active-tab=\"${3}\"",
+			"\tsize=\"${1}\" :tab-items=\"${2}\" :active-tab=\"${3}\"",
 			"\t@change=\"${3}\">",
-			"\t<mu-tab-panel name=\"${4}\">",
-			"\t${4}",
+			"\t<mu-tab-panel name=\"${4}\" caption=\"${5}\" >",
+			"\t${6}",
 			"\t<mu-tab-panel>",
 			"</mu-tabs>"
 		],
@@ -279,6 +279,47 @@
 		],
 		"description": "Popup window, within a modal mask."
 	},
+	"mcPage: page-wrapper": {
+		"prefix": "mu3page-w",
+		"body": [
+			"<page-wrapper>",
+			"\t${2:<!-- container -->}",
+			"</page-wrapper>"
+		],
+		"description": "页面模版"
+	},
+	"mcPage: nav-wrapper": {
+		"prefix": "mu3part-w",
+		"body": [
+			"<nav-wrapper>",
+			"\t${2:<!-- container -->}",
+			"</nav-wrapper>"
+		],
+		"description": "导航模版top slot(header-left、header-right)"
+	},
+	"mcPage: dlg-wrapper": {
+		"prefix": "mu3part-w",
+		"body": [
+			"<dlg-wrapper",
+			"\tv-model=\"$1\"",
+			"\tshow-full-screen",
+			"\tsub-title=\"$2\"",
+			"\t@close-dlg=\"$3\"",
+			"\t:buttons=\"$4\" >",
+			"\t${2:<!-- container -->}",
+			"</dlg-wrapper>"
+		],
+		"description": "弹窗模版"
+	},
+	"mcPage: bar-wrapper": {
+		"prefix": "mu3bar-w",
+		"body": [
+			"<bar-wrapper>",
+			"\t${2:<!-- container -->}",
+			"</bar-wrapper>"
+		],
+		"description": "导航模版slot left"
+	},
 	"VueTMP: snippet": {
 		"prefix": "muvue",
 		"body": [
@@ -290,6 +331,18 @@
 			"\texport default {",
 			"\t$1",
 			"\t}",
+			"\t</script>",
+			"$2"
+		],
+		"description": "Context orgId"
+	},
+	"Vue3TMP: snippet": {
+		"prefix": "mu3vue",
+		"body": [
+			"<template>",
+			"\t<mu-v-box>$1</mu-v-box>",
+			"\t</template>",
+			"\t<script setup>",
 			"\t</script>",
 			"$2"
 		],
@@ -343,5 +396,56 @@
 			"this.$context.orgId"
 		],
 		"description": "Context orgId"
+	},
+	"kakaGrid: ": {
+		"prefix": "muKakaGrid",
+		"body": [
+			"<kaka-grid",
+        "\tref=\"grid\"",
+        "\tsize=\"1\"",
+        "\tkey-field=\"id\"",
+        "\tparent-key-field=\"parentId\"",
+        "\t:columns=\"columns\"",
+        "\t:records=\"records\"",
+        "\t:check-cascade=\"false\"",
+        "\t@load=\"expandAll\"",
+        "\t@allselect=\"setIsSelected\"",
+        "\t@allunselect=\"setIsSelected\"",
+        "\t@cellselect=\"cellselect\"",
+        "\t@cellchange=\"cellchange\"",
+        "\t@buttonclick=\"gridButtonclick\" />"
+		],
+		"description": "kakaGrid-template"
+	},
+	"kakaGridSheet: ": {
+		"prefix": "muKakaGridSheet",
+		"body": [
+			"<kaka-grid-sheet",
+        "\tref=\"grid\"",
+        "\tsize=\"1\"",
+        "\tkey-field=\"id\"",
+        "\tparent-key-field=\"parentId\"",
+				"\tgrid-type=\"report\"",
+        "\t:columns=\"columns\"",
+        "\t:records=\"records\"",
+				"\tauto-stretch",
+				"\t:theme=\"{",
+				"\t\thoverMode: 'row',",
+				"\t\tselectionMode: 'row'",
+				"\t}\" />"
+		],
+		"description": "kakaGrid-template"
+	},
+	"docTemplate: ": {
+		"prefix": "mudoc",
+		"body": [
+			"/**",
+			"\t* @method",
+			"\t* @param {Type} data 目标对象",
+			"\t* @returns {Type} 运营商名称",
+			"\t* @desc 根据目标对象获取运营商",
+			"*/"
+		],
+		"description": "js 基本注释"
 	}
 }

@@ -1,99 +1,10 @@
 {
-  "typeScriptVueComponentTemplate": {
-    "prefix": "tsv-temp",
-    "body": [
-      "import { computed, defineComponent ,unref, ref, watch, onMounted, onUpdated, onUnmounted, reactive, toRefs } from 'vue'",
-      "",
-      "export default defineComponent({",
-      "\tname: 'ComponentName',",
-      "",
-      "\tsetup() {",
-      "\tconst text = ref('HelloWorld')",
-      "",
-      "\tconst book = reactive({",
-      "\t\tauthor: 'Vue ',",
-      "\t\ttitle: 'Vue 3 ',",
-      "\t})",
-      "",
-      "\tlet { author, title } = toRefs(book)",
-      "",
-      "\ttitle.value = 'Vue 3 Detailed'",
-      "",
-      "\tconst computed = computed(()=> unref(book))",
-      "\twatch(title, (new, old) => {",
-      "\t\t$0",
-      "\t})",
-      "\tonMounted(() => {",
-      "\tconsole.log('mounted!')",
-      "\t})",
-      "",
-      "\tonUpdated(() => {",
-      "\t\tconsole.log('updated!')",
-      "\t})",
-      "",
-      "\tonUnmounted(() => {",
-      "\t\tconsole.log('unmounted!')",
-      "\t})",
-      "\t\treturn (",
-      "\t\t\t<div>",
-      "\t\t\t\t{ text.value }",
-      "\t\t\t</div>",
-      "\t\t)",
-      "\t}",
-      "})",
-      ""
-    ],
-    "description": "vue-tsx 模板"
-  },
-  "typeScriptVueDefineComponent": {
-    "prefix": "tsv-def",
-    "body": [
-      "import { defineComponent } from 'vue'",
-      "",
-      "export default defineComponent({",
-      "\tname: 'ComponentName',",
-      "",
-      "\tsetup() {",
-      "\t\treturn (",
-      "\t\t\t<div>",
-      "\t\t\t\t{ text.value }",
-      "\t\t\t</div>",
-      "\t\t)",
-      "\t}",
-      "})",
-      ""
-    ],
-    "description": "简易 defineComponent 组件"
-  },
-  "typeScriptVueFunctionalExportComponent": {
-    "prefix": "tsv-cf",
-    "body": [
-      "function name() {",
-      "\treturn (",
-      "\t\t<div>",
-      "\t\t\t$0",
-      "\t\t</div>",
-      "\t)",
-      "}",
-      "",
-      "export default name",
-      ""
-    ],
-    "description": "Creates a Vue Functional Component with ES7 module system and TypeScript interface"
-  },
   "export": {
     "prefix": "vue3-export default",
     "body": [
       "export default {$1}"
     ],
     "description": "export"
-  },
-  "setup": {
-    "prefix": "vue3-setup",
-    "body": [
-      "setup(${1:props}) {$2}"
-    ],
-    "description": "setup"
   },
   "reactive": {
     "prefix": "vue3-reactive",

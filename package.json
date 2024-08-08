@@ -1,87 +1,99 @@
 {
-	"name": "mcweb-snippets",
-	"displayName": "mcweb-snippets",
-	"description": "代码提示工具",
-	"version": "0.2.0",
-	"icon": "images/icon.png",
-	"publisher": "xielanglang",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/langlangbody/mcweb-snippets"
-	},
-	"author": {
-		"name": "xielanglang"
-	},
-	"license": "MIT",
-	"engines": {
-		"vscode": "^1.45.0"
-	},
-	"categories": [
-		"Snippets"
-	],
-	"activationEvents": [
-		"onLanguage:vuejs"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets/mussel.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/mussel.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/mussel.json"
-			},
-			{
-				"language": "vue-html",
-				"path": "./snippets/mussel.json"
-			},
-			{
+  "name": "mcweb-snippets",
+  "displayName": "mcweb-snippets",
+  "description": "代码提示工具",
+  "version": "0.2.5",
+  "icon": "images/icon.png",
+  "publisher": "xielanglang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/langlangbody/mcweb-snippets"
+  },
+  "author": {
+    "name": "xielanglang"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onLanguage:vuejs"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "aliases": [
+          "Vue",
+          "vue"
+        ],
+        "extensions": [
+          ".vue"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/mussel.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/mussel.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/mussel.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/mussel.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/ts-snippets.json"
       },
-			{
-				"language": "vue",
-				"path": "./snippets/ts-snippets.json"
-			},
+      {
+        "language": "vue",
+        "path": "./snippets/ts-snippets.json"
+      },
       {
         "language": "typescript",
         "path": "./snippets/ts-snippets.json"
       },
-			{
-				"language": "vue",
-				"path": "./snippets/mussel-style.json"
-			},
-			{
-				"language": "vue-html",
-				"path": "./snippets/mussel-style.json"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint src --ext ts",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.45.0",
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.11.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.30.0",
-		"@typescript-eslint/eslint-plugin": "^2.30.0",
-		"glob": "^7.1.6",
-		"mocha": "^7.1.2",
-		"typescript": "^3.8.3",
-		"vscode-test": "^1.3.0"
-	}
+      {
+        "language": "vue",
+        "path": "./snippets/mussel-style.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/mussel-style.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.45.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^18.0.4",
+    "eslint": "^6.8.0",
+    "@typescript-eslint/parser": "^5.30.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "glob": "^8.0.3",
+    "mocha": "^7.1.2",
+    "typescript": "^4.7.4",
+    "vscode-test": "^1.3.0"
+  }
 }
