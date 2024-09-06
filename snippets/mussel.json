@@ -348,34 +348,6 @@
 		],
 		"description": "Context orgId"
 	},
-	"Http: Get": {
-		"prefix": "muapiget",
-		"body": [
-			"const result = await this.$http.get('url', 'params')"
-		],
-		"description": "Methods get"
-	},
-	"Http: Post": {
-		"prefix": "muapipost",
-		"body": [
-			"const result = await this.$http.post('url', 'params')"
-		],
-		"description": "Methods post"
-	},
-	"Http: Patch": {
-		"prefix": "muapipatch",
-		"body": [
-			"const result = await this.$http.patch('url', 'params')"
-		],
-		"description": "Methods patch"
-	},
-	"Http: Delete": {
-		"prefix": "muapidelete",
-		"body": [
-			"const result = await this.$http.delete('url', 'params')"
-		],
-		"description": "Methods delete"
-	},
 	"Store: Dispatch": {
 		"prefix": "musdispatch",
 		"body": [
@@ -390,39 +362,21 @@
 		],
 		"description": "Store Commit"
 	},
-	"Context: orgId": {
-		"prefix": "mucorgId",
-		"body": [
-			"this.$context.orgId"
-		],
-		"description": "Context orgId"
-	},
+	"mc default inject": {
+    "prefix": "mcInject",
+    "body": [
+      "const http = inject('http')",
+      "const context = inject('context')",
+      "const { messageBox } = inject('\\$mussel')",
+      "const application = inject('application')"
+    ],
+    "description": "vue3 中默认inject"
+  },
 	"kakaGrid: ": {
 		"prefix": "muKakaGrid",
 		"body": [
 			"<kaka-grid",
         "\tref=\"grid\"",
-        "\tsize=\"1\"",
-        "\tkey-field=\"id\"",
-        "\tparent-key-field=\"parentId\"",
-        "\t:columns=\"columns\"",
-        "\t:records=\"records\"",
-        "\t:check-cascade=\"false\"",
-        "\t@load=\"expandAll\"",
-        "\t@allselect=\"setIsSelected\"",
-        "\t@allunselect=\"setIsSelected\"",
-        "\t@cellselect=\"cellselect\"",
-        "\t@cellchange=\"cellchange\"",
-        "\t@buttonclick=\"gridButtonclick\" />"
-		],
-		"description": "kakaGrid-template"
-	},
-	"kakaGridSheet: ": {
-		"prefix": "muKakaGridSheet",
-		"body": [
-			"<kaka-grid-sheet",
-        "\tref=\"grid\"",
-        "\tsize=\"1\"",
         "\tkey-field=\"id\"",
         "\tparent-key-field=\"parentId\"",
 				"\tgrid-type=\"report\"",
@@ -447,5 +401,39 @@
 			"*/"
 		],
 		"description": "js 基本注释"
-	}
+	},
+	"mc api action template": {
+    "prefix": "mcApiTemp",
+    "body": [
+      "const endpoint = (suffix = '') => `services/prefix${suffix}`",
+      "const apiAction = http => {",
+      "\treturn {",
+      "\t\t// 新增记录",
+      "\t\taddRecord: (data) => {",
+      "\t\t\treturn http.post({",
+      "\t\t\t\turl: endpoint('/'),",
+      "\t\t\t\tdata,",
+      "\t\t\t\tblocking: true",
+      "\t\t\t})",
+      "\t\t},",
+      "\t\t// 查询记录",
+      "\t\tgetRecords: () => {",
+      "\t\t\treturn http.get(endpoint())",
+      "\t\t},",
+      "\t\t// 根据id查询记录信息",
+      "\t\tgetRecordById: (phaseId) => {",
+      "\t\t\treturn http.get(endpoint(`/${phaseId}`))",
+      "\t\t},",
+      "\t\t// 删除记录",
+      "\t\tdeleteRecord: (phaseId) => {",
+      "\t\t\treturn http.delete(endpoint(`/${phaseId}`))",
+      "\t\t}",
+      "\t}",
+      "}",
+      "",
+      "export default apiAction",
+      ""
+    ],
+    "description": "请求模版文件"
+  }
 }

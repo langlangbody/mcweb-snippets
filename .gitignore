@@ -1,4 +1,18 @@
 out
 node_modules
 .vscode-test/
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Package manager's lock files
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+folder-alias.json
+# Others
+.DS_Store
 *.vsix

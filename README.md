@@ -67,14 +67,6 @@
 |1. | `mudi` | `<mu-dialog>` |
 |2. | `muorgid` | `this.$context.orgId` |
 
-#### Http Part
-
-|No. |  Trigger Key | Element Tag|
-|:------:|:--------------:|:--------|
-|1. | `muapiget` | `const result = await this.$http.get('url','params')` |
-|2. | `muapipost` | 	`const result = await this.$http.post('url','params')` |
-|3. | `muapipatch` | 	`const result = await this.$http.patch('url','params')` |
-|4. | `muapidelete` | 	`const result = await this.$http.delete('url','params')` |
 
 #### Store Part
 |No. |  Trigger Key | Element Tag|
@@ -83,6 +75,31 @@
 |2. | `mustocm` | `this.$store.commit(method, params)` |
 
 
+#### document Part
+|No. |  Trigger Key | Element Tag|
+|:------:|:--------------:|:--------|
+|1. | `mudoc` | docTemplate |
+
+
+#### grid
+|No. |  Trigger Key | Element Tag|
+|:------:|:--------------:|:--------|
+|1. | `muKakaGrid` | kakaGrid-template |
+
+
+#### apiAction
+|No. |  Trigger Key | Element Tag|
+|:------:|:--------------:|:--------|
+|1. | `mcApiTemp` | 请求模版文件 |
+
+#### mcInject
+
+```js
+const http = inject('http')
+const context = inject('context')
+const { messageBox } = inject('$mussel')
+const application = inject('application')
+```
 
 ## 新增vue3 相关API 
 

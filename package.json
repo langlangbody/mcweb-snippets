@@ -2,7 +2,7 @@
   "name": "mcweb-snippets",
   "displayName": "mcweb-snippets",
   "description": "代码提示工具",
-  "version": "0.2.5",
+  "version": "0.2.8",
   "icon": "images/icon.png",
   "publisher": "xielanglang",
   "repository": {
@@ -66,11 +66,7 @@
         "path": "./snippets/ts-snippets.json"
       },
       {
-        "language": "vue",
-        "path": "./snippets/mussel-style.json"
-      },
-      {
-        "language": "vue-html",
+        "language": "jade",
         "path": "./snippets/mussel-style.json"
       }
     ]
